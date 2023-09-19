@@ -23,17 +23,17 @@ const graphik = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://nhuzaa.com.np'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Rohit Sthapit (nhuzaa)',
+    template: '%s | Rohit Sthapit',
   },
   description: 'Developer, writer, and creator.',
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    title: 'Rohit Sthapit (nhuzaa))',
+    description: 'Software Architect | Lead Software Enginner | Toronto Software Engineer',
+    url: 'https://nhuzaa.com.np',
+    siteName: 'Rohit Sthapit (nhuzaa)',
     locale: 'en_US',
     type: 'website',
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'Rohit Sthapit',
     card: 'summary_large_image',
   },
   verification: {
