@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Rohit Sthapit (nhuzaa))',
     description: 'Software Architect | Lead Software Enginner | Toronto Software Engineer',
-    url: 'https://nhuzaa.com.np',
+    url: 'https://nhuzaa.dev',
     siteName: 'Rohit Sthapit (nhuzaa)',
     locale: 'en_US',
     type: 'website',
