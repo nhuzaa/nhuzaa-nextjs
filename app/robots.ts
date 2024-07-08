@@ -5,7 +5,7 @@ export default function robots() {
         userAgent: '*',
       },
     ],
-    sitemap: 'https://nhuzaa.com.np/sitemap.xml',
-    host: 'https://nhuzaa.com.np',
+    sitemap: 'https://nhuzaa.dev/sitemap.xml',
+    host: 'https://nhuzaa.dev',
   };
 }

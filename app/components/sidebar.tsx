@@ -15,6 +15,9 @@ const navItems = {
   '/guestbook': {
     name: 'guestbook',
   },
+  '/resume':{
+    name: 'resume',
+  }
 };
 
 export default function Navbar() {
