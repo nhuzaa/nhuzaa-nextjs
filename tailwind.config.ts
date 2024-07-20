@@ -2,15 +2,12 @@ import type { Config } from 'tailwindcss';
 import typography from '@tailwindcss/typography';
 
 export default {
-  content: [
-    './app/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './content/**/*.mdx',
-  ],
+  content: ['./app/**/*.{ts,tsx}', './content/**/*.mdx', './public/**/*.svg'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-graphik)'],
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
       },
       typography: {
         quoteless: {
