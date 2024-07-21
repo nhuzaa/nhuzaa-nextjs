@@ -6,19 +6,20 @@ import { Navbar } from './components/nav';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
+import favicon from './favicon.png'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://nhuzaa.dev'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'nhuzaa | Rohit Sthapit',
+    template: '%s | Rohit Sthapit nhuzaa',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Lead Software Engineer | Software Architect | MLOps |Full Stack Development | DevOps',
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    title: 'Rohit Sthapit',
+    description: 'Lead Software Engineer | Software Architect | MLOps |Full Stack Development | DevOps',
+    url: 'https://nhuzaa.dev',
+    siteName: 'Nhuzaa',
     locale: 'en_US',
     type: 'website',
   },
@@ -34,12 +35,12 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'nhuzaa',
     card: 'summary_large_image',
   },
   verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
+    google: '',
+    yandex: '',
   },
 };
 

@@ -10,6 +10,10 @@ const SocialLinks = () => {
     'https://www.instagram.com/__nhuzaa',
     'https://www.github.com/nhuzaa',
     'https://stackoverflow.com/users/7104332/rohit-sthapit',
+    'https://www.twitch.tv/nhuzaa__',
+    'https://www.youtube.com/@nhuzaa',
+    'https://tiktok.com/@__nhuzaa?',
+    'https://medium.com/@nhuzaa',
   ];
 
   return (
