@@ -1,45 +1,57 @@
-# Personal Website
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fleerob%2Fleerob.io)
 
-This is the repository for my personal website. It showcases my work, skills, and experience.
+# leerob.io
 
-## Table of Contents
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Database**: [Postgres](https://vercel.com/postgres)
+- **Authentication**: [NextAuth.js](https://next-auth.js.org)
+- **Deployment**: [Vercel](https://vercel.com)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com)
+- **Analytics**: [Vercel Analytics](https://vercel.com/analytics)
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup](#setup)
-- [Usage](#usage)
-- [License](#license)
+## Running Locally
 
-## Introduction
+This application requires Node.js v18.17+.
 
-Welcome to my personal website repository. This website serves as a portfolio to showcase my projects, skills, and experience in software development.
+```bash
+git clone https://github.com/leerob/leerob.io.git
+cd leerob.io
+bun install
+bun run setup # Remove all of my personal information
+bun dev
+```
 
-## Features
+Create a `.env.local` file similar to [`.env.example`](https://github.com/leerob/leerob.io/blob/main/.env.example).
 
-- Showcase of projects and portfolio
-- Information about my skills and experience
-- Contact details
+## Database Schema
 
-## Technologies Used
+```sql
+CREATE TABLE redirects (
+  id SERIAL PRIMARY KEY,
+  source VARCHAR(255) NOT NULL,
+  destination VARCHAR(255) NOT NULL,
+  permanent BOOLEAN NOT NULL
+);
 
-- HTML
-- TailWind CSS 
-- JavaScript
-- Typescript
+CREATE TABLE guestbook (
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  body TEXT NOT NULL,
+  created_by VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP NOT NULL,
+  updated_at TIMESTAMP
+);
 
-## Setup
-
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Open `index.html` in a web browser.
-
-## Usage
-
-1. Browse through the website to learn about my projects and skills.
-2. Contact me using the provided contact details.
+CREATE TABLE views (
+  slug VARCHAR(255) PRIMARY KEY,
+  count INT NOT NULL
+);
+```
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+1. You are free to use this code as inspiration.
+2. Please do not copy it directly.
+3. Crediting the author is appreciated.
 
+Please remove all of my personal information (blog posts, images, etc.) by running `bun run setup`.
